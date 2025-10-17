@@ -47,7 +47,13 @@
   color: $white;
   background: $black;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: all 0.25s;
+
+  & span {
+    font-size: 0.9rem;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 }

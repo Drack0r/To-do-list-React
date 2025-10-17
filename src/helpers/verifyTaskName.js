@@ -2,8 +2,14 @@ import { formatString } from "./formatString";
 import { capitalizeTaskName } from "./capitalizeTaskName";
 
 export function verifyTaskName(taskName, tasksList) {
-  const formatedTaskName = taskName.trim().toLowerCase();
   const authorizedChars = /^[a-zA-Z0-9\sàâäéèêëïîôöùûüÿç.,!?'-]+$/;
+
+  const formatedTaskName = taskName.trim().toLowerCase();
+  const capitalizedTaskName = capitalizeTaskName(taskName);
+
+  const isTaskExist = tasksList.some(
+    (task) => formatString(task.name) === formatString(taskName)
+  );
 
   if (!taskName || formatedTaskName === "") {
     alert("⛔️ Le nom de la tâche ne peut pas être vide !");
@@ -30,11 +36,8 @@ export function verifyTaskName(taskName, tasksList) {
     return false;
   }
 
-  // TO DO : Existe déjà
-  if (
-    tasksList.some((task) => formatString(task.name) === formatString(taskName))
-  ) {
-    alert(`⛔️ La tâche "${capitalizeTaskName(taskName)}" existe déjà !`);
+  if (isTaskExist) {
+    alert(`⛔️ La tâche "${capitalizedTaskName}" existe déjà !`);
     return false;
   }
 

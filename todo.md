@@ -1,15 +1,16 @@
 ### To do 📝
 
-- Remplacer les `alert()` par des messages UI
 - Mettre en place la pesistence des données dans le localStorage
+
+- Remplacer les `alert()` par des messages UI
+
+### In Progress 🚧
 
 ### Done ✅
 
-- Créer le composant `TaskList.jsx`
-- Supprimer le `placeholder.json`
-- Mettre en place de vrai données
-- Créer le composant `Button.jsx`
-- Mettre en place la logique d'ajout de tâche
-- Mettre en place le retour à la ligne si le nom de tâche est trop long
-- Capitaliser le nom de la nouvelle tâche
-- Mettre en place une vérification lors de l'ajout de tâche
+- Remplacer le texte des bouton par des icônes
+- Mettre en place le système de suppression de tâche
+- Mettre en place le système de marquage de tâche
+- Renomer les classes pour mieux respecter BEM
+- Passer en revue le code
+- Mettre en place des style pour une task complétée

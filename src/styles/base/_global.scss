@@ -21,11 +21,11 @@ body {
 
 #root {
   @include flex-column-align-center;
-  gap: 50px;
+  gap: 40px;
 }
 
 .main {
-  min-height: calc(100vh - 216px);
+  min-height: calc(100vh - 196px);
   width: 100%;
 
   // border: 1px dashed $black;

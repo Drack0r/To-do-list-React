@@ -1,4 +1,4 @@
-export function Button({ type, textContent, callback }) {
+export function Button({ type, content, onClick }) {
   const buttonClasses = {
     add: "add-btn",
     delete: "delete-btn",
@@ -8,9 +8,9 @@ export function Button({ type, textContent, callback }) {
     <button
       type="button"
       className={buttonClasses[type] || "btn"}
-      onClick={callback}
+      onClick={onClick}
     >
-      {textContent}
+      {content}
     </button>
   );
 }

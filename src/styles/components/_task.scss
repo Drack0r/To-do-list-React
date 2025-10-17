@@ -9,9 +9,18 @@
   padding: 15px 2%;
   border: 1px solid $black;
   border-radius: 10px;
+  box-shadow: $box-shadow-primary $black;
+
+  &--done {
+    background: $grey;
+
+    & .task-text {
+      text-decoration: line-through 2px;
+    }
+  }
 }
 
-.task__checkbox {
+.task__label {
   @include flex-align-center;
   gap: 10px;
   cursor: pointer;
@@ -23,7 +32,7 @@
     cursor: pointer;
   }
 
-  & .checkmark {
+  & .task__checkmark {
     position: relative;
     display: inline-block;
     height: 18px;
@@ -31,15 +40,15 @@
     margin-right: 8px;
     border: 2px solid $black;
     border-radius: 4px;
-    transition: all 0.2s ease;
+    transition: $transition-primary;
   }
 
-  & input:checked + .checkmark {
+  & input:checked + .task__checkmark {
     background-color: $black;
     border-color: $black;
   }
 
-  & input:checked + .checkmark::after {
+  & input:checked + .task__checkmark::after {
     content: "";
     position: absolute;
     left: 4px;
@@ -52,11 +61,9 @@
   }
 }
 
-.task p {
+.task__text {
   max-width: 88%;
   line-height: 1.4;
-
-  // border: 1px dashed $black;
 }
 
 .task .delete-btn {

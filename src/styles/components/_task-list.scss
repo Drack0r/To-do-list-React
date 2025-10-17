@@ -2,15 +2,15 @@
 
 @use "../abstracts/mixins" as *;
 
-.task-list h2 {
+.task-list__title {
   margin-bottom: 40px;
 }
 
-.task-list .add-btn {
+.add-btn {
   margin-bottom: 40px;
 }
 
-.tasks-container {
+.task-list__container {
   @include flex-column;
   gap: 20px;
 }

@@ -7,8 +7,13 @@ $font-family-primary: "Poppins";
 $black: #111;
 $lightblack: #333;
 $white: #f1f1f1;
-$grey: #999;
+$grey: #cccccc;
 $red: #c80000;
 $green: #16610e;
+$blue: #115cdd;
 
 // ===== Box Shadow ===== //
+$box-shadow-primary: 2px 3px 0 1px;
+
+// ===== Transition ===== //
+$transition-primary: all 0.2s;
