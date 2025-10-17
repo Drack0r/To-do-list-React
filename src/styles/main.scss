@@ -9,6 +9,8 @@
 @use "./base/typography";
 
 /* Components */
+@use "./components/task-list";
+@use "./components/task";
 
 /* Layout */
 @use "./layout/header";

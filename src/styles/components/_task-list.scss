@@ -1,0 +1,12 @@
+/* Task List */
+
+@use "../abstracts/mixins" as *;
+
+.task-list h2 {
+  margin-bottom: 40px;
+}
+
+.task-container {
+  @include flex-column;
+  gap: 20px;
+}
