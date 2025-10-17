@@ -1,0 +1,12 @@
+/* Footer */
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.footer {
+  @include flex-full-center;
+  width: 100%;
+  padding: 20px 0;
+  color: $white;
+  background: $black;
+}

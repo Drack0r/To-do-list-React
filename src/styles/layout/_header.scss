@@ -1,0 +1,9 @@
+/* Header */
+
+@use "../abstracts/variables" as *;
+
+.header {
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 2px solid $black;
+}

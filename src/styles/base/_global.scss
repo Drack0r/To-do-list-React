@@ -1,6 +1,7 @@
 /* Global */
 
 @use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
 
 html,
 body {
@@ -16,4 +17,14 @@ body {
 body {
   color: $black;
   background: $white;
+}
+
+#root {
+  @include flex-column-align-center;
+}
+
+.main {
+  min-height: calc(100vh - 116px);
+  width: 100%;
+  background: $grey;
 }
