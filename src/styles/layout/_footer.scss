@@ -1,12 +1,35 @@
-/* Footer */
+/**
+ * Footer Layout Styles
+ * Styling for the application footer component with author credits
+ */
 
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+/* Footer container */
 .footer {
   @include flex-full-center;
   width: 100%;
   padding: 20px 0;
   color: $white;
   background: $black;
+  border-top: 2px solid $black;
 }
+
+/* Footer text styling */
+.footer__text {
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+/* Future responsive adjustments */
+// @media (max-width: 768px) {
+//   .footer {
+//     padding: 15px 0;              // Reduced padding on mobile
+//   }
+//   .footer__text {
+//     font-size: 0.8rem;            // Smaller text on mobile devices
+//   }
+// }

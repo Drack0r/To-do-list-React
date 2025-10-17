@@ -1,24 +1,36 @@
-/* Abstracts */
+/**
+ * Main SCSS entry point - imports all stylesheets in proper cascade order
+ * Follows the 7-1 SCSS architecture pattern for maintainable styles
+ */
+
+/* ===== Abstracts ===== */
+/* Variables, mixins, and functions - no CSS output */
 @use "./abstracts/variables";
 @use "./abstracts/mixins";
 @use "./abstracts/keyframes";
 
-/* Base */
+/* ===== Base ===== */
+/* Reset styles, global rules, and typography */
 @use "./base/reset";
 @use "./base/global";
 @use "./base/typography";
 
-/* Components */
+/* ===== Components ===== */
+/* Reusable UI components with specific functionality */
 @use "./components/task-list";
 @use "./components/task";
 @use "./components/button";
 
-/* Layout */
+/* ===== Layout ===== */
+/* Layout-related styles (header, footer, navigation) */
 @use "./layout/header";
 @use "./layout/footer";
 
-/* Pages */
+/* ===== Pages ===== */
+/* Page-specific styles (currently unused) */
 
-/* Themes */
+/* ===== Themes ===== */
+/* Theme variations and color schemes (currently unused) */
 
-/* Vendors */
+/* ===== Vendors ===== */
+/* Third-party library styles (currently unused) */

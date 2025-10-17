@@ -1,8 +1,12 @@
-/* Global */
+/**
+ * Global Styles
+ * Base styling for the entire application layout and structure
+ */
 
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+/* Root container styling */
 html,
 body {
   height: 100%;
@@ -10,23 +14,30 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-
-  // border: 1px dashed $black;
 }
 
+/* Body-specific styling */
 body {
   color: $black;
   background: $white;
 }
 
+/* React root element layout */
 #root {
   @include flex-column-align-center;
   gap: 40px;
 }
 
+/* Main content area */
 .main {
-  min-height: calc(100vh - 196px);
+  min-height: calc(100vh - 240.67px);
   width: 100%;
-
-  // border: 1px dashed $black;
 }
+
+/* Future responsive adjustments */
+// @media (max-width: 768px) {
+//   html, body {
+//     max-width: 100%;
+//     padding: 0 1rem;
+//   }
+// }

@@ -1,16 +1,22 @@
-/* Button */
+/**
+ * Button Component Styles
+ * Reusable button variants with consistent base styling and hover states
+ */
 
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+/* Generic button base class */
 .btn {
   @include button-base;
+  background: $black;
 
   &:hover {
     background: $grey;
   }
 }
 
+/* Add action button */
 .add-btn {
   @include button-base;
 
@@ -19,6 +25,7 @@
   }
 }
 
+/* Delete action button */
 .delete-btn {
   @include button-base;
 
@@ -26,3 +33,13 @@
     background: $red;
   }
 }
+
+/* Future button variants (examples) */
+// .primary-btn {
+//   @include button-base;
+//   background: $blue;
+//
+//   &:hover {
+//     background: darken($blue, 10%);
+//   }
+// }

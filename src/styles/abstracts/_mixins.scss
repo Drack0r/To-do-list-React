@@ -1,38 +1,50 @@
-/* Mixins */
+/**
+ * SCSS Mixins
+ * Reusable style patterns to maintain consistency and reduce code duplication
+ */
 
 @use "./variables" as *;
 
-// ===== Flexbox ===== //
+// ===== Flexbox Utilities ===== //
+/* Basic flexbox layout mixins for common positioning patterns */
+
 @mixin flex {
   display: flex;
 }
+
 @mixin flex-align-center {
   display: flex;
   align-items: center;
 }
+
 @mixin flex-justify-center {
   display: flex;
   justify-content: center;
 }
+
 @mixin flex-full-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 @mixin flex-column {
   display: flex;
   flex-direction: column;
 }
+
 @mixin flex-column-align-center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 @mixin flex-column-justify-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 @mixin flex-column-full-center {
   display: flex;
   flex-direction: column;
@@ -40,7 +52,9 @@
   justify-content: center;
 }
 
-// ===== Button ===== //
+// ===== Component Mixins ===== //
+/* Base styles for interactive components */
+
 @mixin button-base {
   padding: 0.5em;
   font-size: 0.8rem;
@@ -49,11 +63,28 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.25s;
+  transition: $transition-primary;
 
+  /* Icon and text spacing within buttons */
   & span {
     font-size: 0.9rem;
     margin-left: 5px;
     margin-right: 5px;
   }
 }
+
+// ===== Future Mixins (Examples) ===== //
+/* Additional mixins for future development */
+
+// @mixin card-base {
+//   padding: 1rem;
+//   border-radius: 8px;
+//   box-shadow: $box-shadow-primary;
+//   background: $white;
+// }
+
+// @mixin text-truncate {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }

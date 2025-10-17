@@ -1,11 +1,47 @@
-/* Typography */
+/**
+ * Typography Styles
+ * Global font definitions and text styling for consistent typography across the application
+ */
 
 @use "../abstracts/variables" as *;
 
+/* Base typography settings */
 html,
 body {
   font-family: $font-family-primary, sans-serif;
   font-size: 18px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.4;
+}
+
+/* Headings typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* Specific heading sizes (if needed in future) */
+// h1 { font-size: 2.5rem; }
+// h2 { font-size: 2rem; }
+// h3 { font-size: 1.5rem; }
+
+/* Text elements */
+p {
+  line-height: 1.4;
+}
+
+/* Interactive text elements */
+button {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
 }

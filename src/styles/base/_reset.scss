@@ -1,7 +1,43 @@
-/* Reset */
+/**
+ * CSS Reset
+ * Removes default browser styling for consistent cross-browser appearance
+ */
 
+/* Universal reset for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Additional reset rules for better consistency */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default list styling */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default button styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Remove default input styling */
+input {
+  outline: none;
+  border: none;
+}
+
+/* Improve text rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

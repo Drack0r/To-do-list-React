@@ -1,9 +1,14 @@
-/* Variables */
+/**
+ * Global SCSS Variables
+ * Centralized design tokens for consistent styling across the application
+ */
 
-// ===== Font Family ===== //
-$font-family-primary: "Poppins";
+// ===== Typography ===== //
+/* Primary font family for the application */
+$font-family-primary: "Poppins", sans-serif;
 
-// ===== Color ===== //
+// ===== Color Palette ===== //
+/* Base colors used throughout the application */
 $black: #111;
 $lightblack: #333;
 $white: #f1f1f1;
@@ -12,8 +17,20 @@ $red: #c80000;
 $green: #16610e;
 $blue: #115cdd;
 
-// ===== Box Shadow ===== //
+// ===== Effects ===== //
+/* Visual effects and animations */
 $box-shadow-primary: 2px 3px 0 1px;
-
-// ===== Transition ===== //
 $transition-primary: all 0.2s;
+
+// ===== Layout (Future) ===== //
+/* Spacing and layout variables for future use */
+// $spacing-xs: 8px;
+// $spacing-sm: 16px;
+// $spacing-md: 24px;
+// $spacing-lg: 32px;
+
+// ===== Breakpoints (Future) ===== //
+/* Responsive design breakpoints for future use */
+// $breakpoint-mobile: 768px;
+// $breakpoint-tablet: 1024px;
+// $breakpoint-desktop: 1200px;

@@ -1,16 +1,21 @@
-/* Task */
+/**
+ * Task Component Styles
+ * Individual task item styling with checkbox, text, and delete functionality
+ */
 
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
+/* Main task container */
 .task {
-  @include flex-align-center;
-  width: 50%;
-  padding: 15px 2%;
-  border: 1px solid $black;
-  border-radius: 10px;
-  box-shadow: $box-shadow-primary $black;
+  @include flex-align-center; // Horizontal layout with centered alignment
+  width: 50%; // Half-width for balanced layout
+  padding: 15px 2%; // Inner spacing for content breathing room
+  border: 1px solid $black; // Clear visual boundaries
+  border-radius: 10px; // Rounded corners for modern appearance
+  box-shadow: $box-shadow-primary $black; // Subtle elevation effect
 
+  /* Completed task state */
   &--done {
     background: $grey;
 
@@ -20,11 +25,13 @@
   }
 }
 
+/* Task label container (checkbox + text) */
 .task__label {
   @include flex-align-center;
   gap: 10px;
   cursor: pointer;
 
+  /* Hidden native checkbox input */
   & input {
     position: absolute;
     opacity: 0;
@@ -32,40 +39,45 @@
     cursor: pointer;
   }
 
+  /* Custom checkbox appearance */
   & .task__checkmark {
     position: relative;
     display: inline-block;
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
     margin-right: 8px;
     border: 2px solid $black;
     border-radius: 4px;
     transition: $transition-primary;
   }
 
+  /* Checked state styling */
   & input:checked + .task__checkmark {
     background-color: $black;
     border-color: $black;
   }
 
+  /* Checkmark icon when checked */
   & input:checked + .task__checkmark::after {
     content: "";
     position: absolute;
-    left: 4px;
-    top: 0px;
-    height: 9px;
-    width: 4px;
+    left: 5px;
+    top: 2px;
+    height: 10px;
+    width: 5px;
     border: solid white;
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
   }
 }
 
+/* Task text content */
 .task__text {
   max-width: 88%;
   line-height: 1.4;
 }
 
+/* Delete button positioning */
 .task .delete-btn {
   margin-left: auto;
 }
