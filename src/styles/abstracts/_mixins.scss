@@ -1,5 +1,7 @@
 /* Mixins */
 
+@use "./variables" as *;
+
 // ===== Flexbox ===== //
 @mixin flex {
   display: flex;
@@ -36,4 +38,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+// ===== Button ===== //
+@mixin button-base {
+  padding: 0.5em;
+  font-size: 0.8rem;
+  color: $white;
+  background: $black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.25s;
 }

@@ -52,18 +52,13 @@
   }
 }
 
-.task button {
-  margin-left: auto;
-  padding: 0.5em;
-  font-size: 0.8rem;
-  color: $white;
-  background: $black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.25s;
+.task p {
+  max-width: 88%;
+  line-height: 1.4;
 
-  &:hover {
-    background: $red;
-  }
+  // border: 1px dashed $black;
+}
+
+.task .delete-btn {
+  margin-left: auto;
 }

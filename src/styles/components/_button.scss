@@ -1,0 +1,28 @@
+/* Button */
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.btn {
+  @include button-base;
+
+  &:hover {
+    background: $grey;
+  }
+}
+
+.add-btn {
+  @include button-base;
+
+  &:hover {
+    background: $green;
+  }
+}
+
+.delete-btn {
+  @include button-base;
+
+  &:hover {
+    background: $red;
+  }
+}
