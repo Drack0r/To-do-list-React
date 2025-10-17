@@ -1,0 +1,11 @@
+/* Typography */
+
+@use "../abstracts/variables" as *;
+
+html,
+body {
+  font-family: $font-family-primary, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+}

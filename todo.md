@@ -1,5 +1,6 @@
 ### To do 📝
 
-- Héberger le site sur Github Pages
+- Mettre en place Sass
+- Mettre en place les styles de base
 
 ### Done ✅
