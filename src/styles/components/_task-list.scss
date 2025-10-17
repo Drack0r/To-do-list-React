@@ -6,7 +6,7 @@
   margin-bottom: 40px;
 }
 
-.task-container {
+.tasks-container {
   @include flex-column;
   gap: 20px;
 }

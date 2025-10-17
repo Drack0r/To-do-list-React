@@ -1,9 +1,7 @@
 ### To do 📝
 
-- Créer les composants [...]
-- Mettre en place des données placeholder
-
 ### Done ✅
 
-- Mettre en place une première structure de la task list dans le main
-- Appliquer les style
+- Mettre en place des données placeholder
+- Créer le composant `Task.jsx`
+- Simuler le comportement de l'app grâce aux données placeholder
