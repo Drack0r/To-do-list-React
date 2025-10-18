@@ -1,14 +1,28 @@
 ### To do 📝
 
-- Passer en revue le code
-- Ajouter des index.js pour les imports
+---
 
-- Ajouter une annulation pour l'ajout ou la suppression de tâche
-- Remplacer les `alert()` par des messages UI
+- Passer en revue la codebase
+
+---
+
+- Ajouter des `index.js` pour les simplifier imports
+
+---
+
+- Ajouter une possibilité d'annulation pour l'ajout/suppression de tâche
+- Remplacer les `alert()` par des messages dans l'UI
+
+---
 
 ### In Progress 🚧
 
+---
+
+---
+
 ### Done ✅
 
-- Mettre en place la pesistence des données dans le localStorage
-- Commenter le code
+---
+
+---
